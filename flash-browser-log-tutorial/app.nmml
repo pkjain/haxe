@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  <app title="FlashLogTutorial" file="FlashLogTutorial" main="FlashLogTutorial" package="com.infoheap.haxe.tutorial" version="1.4.0" company="InfoHeap" if="flash" />
+
+  <window width="600" height="400" fps="60" orientation="landscape" resizable="false" background="0xffffff" if="flash" />
+
+  <!-- Flags etc.-->
+  <set name="BUILD_DIR" value="bin" />
+  <section if="flash">
+    <set name="SWF_VERSION" value="10.1" />
+    <haxedef name="fdb" />
+  </section>
+
+  <!-- Haxe source -->
+  <classpath name="src" />
+
+  <haxelib name="nme" />
+
+  <ndll name="std" />
+  <ndll name="nme" haxelib="nme" />
+
+</project>
